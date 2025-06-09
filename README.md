@@ -9,8 +9,8 @@ npm install gh-pages --save-dev
 ```json:package.json
 {
   "scripts": {
-    "predeploy": "npm run build", // 追加
-    "deploy": "gh-pages -d dist"  // 追加
+    "build": "npm run build",
+    "deploy": "gh-pages -d dist"
   }
 }
 ```
@@ -20,7 +20,7 @@ npm install gh-pages --save-dev
 ```typescript:vite.config.ts
 export default defineConfig({
   plugins: [react()],
-  base: '/リポジトリ名/', //追加
+  base: '/リポジトリ名/',
 });
 ```
 
